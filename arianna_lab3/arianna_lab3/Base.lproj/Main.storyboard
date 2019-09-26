@@ -1,0 +1,154 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.Storyboard.XIB" version="3.0" toolsVersion="12121" systemVersion="16F73" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" colorMatched="YES" initialViewController="BYZ-38-t0r">
+    <device id="retina4_7" orientation="portrait">
+        <adaptation id="fullscreen"/>
+    </device>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="12089"/>
+        <capability name="Constraints to layout margins" minToolsVersion="6.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <scenes>
+        <!--View Controller-->
+        <scene sceneID="tne-QT-ifu">
+            <objects>
+                <viewController id="BYZ-38-t0r" customClass="ViewController" customModule="arianna_lab3" customModuleProvider="target" sceneMemberID="viewController">
+                    <layoutGuides>
+                        <viewControllerLayoutGuide type="top" id="y3c-jy-aDJ"/>
+                        <viewControllerLayoutGuide type="bottom" id="wfy-db-euE"/>
+                    </layoutGuides>
+                    <view key="view" contentMode="scaleToFill" id="8bC-Xf-vdC">
+                        <rect key="frame" x="0.0" y="0.0" width="375" height="667"/>
+                        <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+                        <subviews>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="c9t-sF-0ka" customClass="ColorButtons" customModule="arianna_lab3" customModuleProvider="target">
+                                <rect key="frame" x="24" y="629" width="30" height="30"/>
+                                <connections>
+                                    <action selector="redButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="zQW-0D-o0m"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="DE4-lN-Gup" customClass="ColorButtons" customModule="arianna_lab3" customModuleProvider="target">
+                                <rect key="frame" x="62" y="629" width="30" height="30"/>
+                                <connections>
+                                    <action selector="greenButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vmy-eO-hUY"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pvh-km-fe3" customClass="ColorButtons" customModule="arianna_lab3" customModuleProvider="target">
+                                <rect key="frame" x="100" y="629" width="30" height="30"/>
+                                <connections>
+                                    <action selector="blueButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="rIx-ip-7Tm"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="GEY-tx-GKC" customClass="ColorButtons" customModule="arianna_lab3" customModuleProvider="target">
+                                <rect key="frame" x="138" y="629" width="30" height="30"/>
+                                <connections>
+                                    <action selector="yellowButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="hgb-iQ-Nua"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="CTb-vw-0xU" customClass="ColorButtons" customModule="arianna_lab3" customModuleProvider="target">
+                                <rect key="frame" x="176" y="629" width="30" height="30"/>
+                                <connections>
+                                    <action selector="orangeButt:" destination="BYZ-38-t0r" eventType="touchUpInside" id="vqH-23-Er6"/>
+                                </connections>
+                            </button>
+                            <toolbar opaque="NO" clearsContextBeforeDrawing="NO" contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="d8z-kr-1nV">
+                                <rect key="frame" x="0.0" y="10" width="375" height="44"/>
+                                <items>
+                                    <barButtonItem style="plain" id="NMc-nQ-TQE">
+                                        <slider key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" value="0.5" minValue="0.0" maxValue="1" id="lJd-4o-EOW">
+                                            <rect key="frame" x="14" y="6.5" width="84" height="31"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <connections>
+                                                <action selector="widthChange:" destination="BYZ-38-t0r" eventType="valueChanged" id="JGb-2D-IZ0"/>
+                                            </connections>
+                                        </slider>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="I6l-Jl-kSu"/>
+                                    <barButtonItem style="plain" id="Qwa-Rp-ycb">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="zp1-F5-ySM">
+                                            <rect key="frame" x="170" y="7" width="34" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="clear"/>
+                                            <connections>
+                                                <action selector="clearLines:" destination="BYZ-38-t0r" eventType="touchUpInside" id="4Y5-cW-Ytl"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                    <barButtonItem style="plain" systemItem="flexibleSpace" id="ZDK-Kf-ghf"/>
+                                    <barButtonItem style="plain" id="brL-hv-zwq">
+                                        <button key="customView" opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" id="7tr-Y7-YCo">
+                                            <rect key="frame" x="324" y="7" width="35" height="30"/>
+                                            <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
+                                            <state key="normal" title="undo"/>
+                                            <connections>
+                                                <action selector="undoDraw:" destination="BYZ-38-t0r" eventType="touchUpInside" id="gQT-WW-l7P"/>
+                                            </connections>
+                                        </button>
+                                    </barButtonItem>
+                                </items>
+                            </toolbar>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="rUL-Ue-h11">
+                                <rect key="frame" x="317" y="623" width="38" height="30"/>
+                                <state key="normal" title="Save!"/>
+                                <connections>
+                                    <action selector="savepic:" destination="BYZ-38-t0r" eventType="touchUpInside" id="Tlj-qy-E5i"/>
+                                </connections>
+                            </button>
+                            <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="roundedRect" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="WuC-C2-5mP">
+                                <rect key="frame" x="256" y="623" width="40" height="30"/>
+                                <state key="normal" title="Share"/>
+                                <connections>
+                                    <action selector="shareImg:" destination="BYZ-38-t0r" eventType="touchUpInside" id="xM4-2d-ny0"/>
+                                </connections>
+                            </button>
+                        </subviews>
+                        <color key="backgroundColor" red="1" green="1" blue="1" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+                        <constraints>
+                            <constraint firstItem="pvh-km-fe3" firstAttribute="leading" secondItem="DE4-lN-Gup" secondAttribute="trailing" constant="8" id="1ML-xu-DTO"/>
+                            <constraint firstItem="pvh-km-fe3" firstAttribute="width" secondItem="c9t-sF-0ka" secondAttribute="width" id="6ty-Bs-x75"/>
+                            <constraint firstItem="CTb-vw-0xU" firstAttribute="leading" secondItem="GEY-tx-GKC" secondAttribute="trailing" constant="8" id="DYn-yT-uGR"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="c9t-sF-0ka" secondAttribute="bottom" constant="8" id="Fh5-Er-reb"/>
+                            <constraint firstAttribute="trailing" secondItem="d8z-kr-1nV" secondAttribute="trailing" id="Ics-4z-vPK"/>
+                            <constraint firstItem="CTb-vw-0xU" firstAttribute="height" secondItem="c9t-sF-0ka" secondAttribute="height" id="Kuh-q6-SbJ"/>
+                            <constraint firstAttribute="trailingMargin" secondItem="rUL-Ue-h11" secondAttribute="trailing" constant="4" id="M5h-02-BZa"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="rUL-Ue-h11" secondAttribute="bottom" constant="14" id="MzT-yP-kDi"/>
+                            <constraint firstItem="DE4-lN-Gup" firstAttribute="height" secondItem="c9t-sF-0ka" secondAttribute="height" id="NYw-ak-G2M"/>
+                            <constraint firstItem="GEY-tx-GKC" firstAttribute="height" secondItem="c9t-sF-0ka" secondAttribute="height" id="Pme-9P-At8"/>
+                            <constraint firstItem="DE4-lN-Gup" firstAttribute="leading" secondItem="c9t-sF-0ka" secondAttribute="trailing" constant="8" id="UVc-hu-ooJ"/>
+                            <constraint firstItem="CTb-vw-0xU" firstAttribute="width" secondItem="c9t-sF-0ka" secondAttribute="width" id="VKk-rG-oRU"/>
+                            <constraint firstItem="GEY-tx-GKC" firstAttribute="leading" secondItem="pvh-km-fe3" secondAttribute="trailing" constant="8" id="VTg-ln-Etf"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="WuC-C2-5mP" secondAttribute="bottom" constant="14" id="Ya5-fX-TfY"/>
+                            <constraint firstItem="rUL-Ue-h11" firstAttribute="leading" secondItem="WuC-C2-5mP" secondAttribute="trailing" constant="21" id="int-QC-w1W"/>
+                            <constraint firstItem="d8z-kr-1nV" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leading" id="ism-1O-X4a"/>
+                            <constraint firstItem="c9t-sF-0ka" firstAttribute="leading" secondItem="8bC-Xf-vdC" secondAttribute="leadingMargin" constant="8" id="jGN-QE-TaS"/>
+                            <constraint firstItem="DE4-lN-Gup" firstAttribute="width" secondItem="c9t-sF-0ka" secondAttribute="width" id="lES-ZO-3kf"/>
+                            <constraint firstItem="pvh-km-fe3" firstAttribute="height" secondItem="c9t-sF-0ka" secondAttribute="height" id="osM-9x-Tbt"/>
+                            <constraint firstItem="d8z-kr-1nV" firstAttribute="top" secondItem="8bC-Xf-vdC" secondAttribute="top" constant="10" id="pGL-yE-xhI"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="pvh-km-fe3" secondAttribute="bottom" constant="8" id="r0o-Kd-i69"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="DE4-lN-Gup" secondAttribute="bottom" constant="8" id="urr-Ao-n3l"/>
+                            <constraint firstItem="GEY-tx-GKC" firstAttribute="width" secondItem="c9t-sF-0ka" secondAttribute="width" id="uv8-KB-k9f"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="CTb-vw-0xU" secondAttribute="bottom" constant="8" id="wu7-G9-YkJ"/>
+                            <constraint firstItem="wfy-db-euE" firstAttribute="top" secondItem="GEY-tx-GKC" secondAttribute="bottom" constant="8" id="xwn-a6-jrU"/>
+                        </constraints>
+                    </view>
+                    <connections>
+                        <outlet property="blue" destination="pvh-km-fe3" id="N4s-8Z-3nq"/>
+                        <outlet property="clear" destination="zp1-F5-ySM" id="NQJ-Fo-kUd"/>
+                        <outlet property="green" destination="DE4-lN-Gup" id="v57-By-V7C"/>
+                        <outlet property="orange" destination="CTb-vw-0xU" id="tqH-mM-65x"/>
+                        <outlet property="red" destination="c9t-sF-0ka" id="Wne-of-exo"/>
+                        <outlet property="saveImg" destination="rUL-Ue-h11" id="Mff-ZU-RpL"/>
+                        <outlet property="shrButt" destination="WuC-C2-5mP" id="a0N-3G-wSo"/>
+                        <outlet property="undoButt" destination="7tr-Y7-YCo" id="6Jc-aP-kmr"/>
+                        <outlet property="view" destination="8bC-Xf-vdC" id="cND-vT-MJD"/>
+                        <outlet property="widthSlider" destination="lJd-4o-EOW" id="vsc-Iq-a42"/>
+                        <outlet property="yellow" destination="GEY-tx-GKC" id="NeE-j4-ouG"/>
+                    </connections>
+                </viewController>
+                <placeholder placeholderIdentifier="IBFirstResponder" id="dkx-z0-nzr" sceneMemberID="firstResponder"/>
+            </objects>
+            <point key="canvasLocation" x="136.80000000000001" y="138.98050974512745"/>
+        </scene>
+    </scenes>
+</document>
